@@ -1,26 +1,54 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Home from './home.js'
+import About from './about.js'
+import Services from './services.js'
+import Prices from './prices.js'
+import Gallery from './gallery.js'
+import Contacts from './contacts.js'
+import Footer from './footer.js'
+import logo from './assets/logo.svg'
 
-function App() {
+class App extends React.Component {
+    
+    constructor(){
+        super()
+        this.state = {
+            ass: true
+        }
+        this.scrollToTop = this.scrollToTop.bind(this)
+    }
+
+    scrollToTop(){
+        window.scrollTo(0,0)
+    }
+    
+  render(){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+     <div id='navigation'>
+          <img id='logo' src={logo} alt='Company logo' onClick={this.scrollToTop}/>
+          <div id='navbar'>
+           <a className='navitem' href="home">HOME</a>
+           <a className='navitem' href='#aboutsection'>ABOUT</a>
+           <a className='navitem' href='#services'>SERVICES</a>
+           <a className='navitem' href='#prices'>PRICING</a>
+           <a className='navitem' href='#gallery'>GALLERY</a>
+           <a className='navitem' href='#contacts'>CONTACTS</a>
+           </div>
+        </div>
+
+      <Home/>
+      <Services />
+      <About/>
+      <Prices/>
+      <Gallery />
+      <Contacts/>
+      <Footer/>
     </div>
   );
+}
 }
 
 export default App;

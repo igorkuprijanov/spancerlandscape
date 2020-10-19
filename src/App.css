@@ -1,38 +1,466 @@
-.App {
-  text-align: center;
+*{
+    
+    font-family: 'Inter', sans-serif;
+}
+#logo{
+    width: 60px;
+    height: 60px;
+    margin-top: 1%;
+}
+#navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.navitem{
+    background: none;
+    border: none;
+    color: #f2f2f2;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.navitem:hover{
+    cursor: pointer;
+    color: white;
+}
+#navbar{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#home{
+    height: 100vh;
+}
+#homebackground{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(0.5);
+}
+#homeall{
+    top: 0;
+    margin-top: 15%;
+    margin-left: 10%;
+    z-index: 3;
+    position: absolute;
+}
+#homeheading{
+    width: 60%;
+    color: white;
+    letter-spacing: 3px;
+}
+#homeparagraph{
+    width: 50%;
+    color: white;
+    line-height: 25px;
+}
+#homebuttonstart{
+    color: white;
+    background-color: #75cc33;
+    width: 13%;
+    height: 6vh;
+    border: 3px solid #75cc33;
+    font-size: 18px;
+    font-weight: 600;
+}
+#homebuttonprojects{
+    color: #d681f6;
+    background-color: transparent;
+    border: 3px solid #d681f6;
+    margin-left: 3%;
+    width: 13%;
+    height: 6vh;
+    font-size: 18px;
+    font-weight: 600;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.homebuttonsanchors{
+    text-decoration: none;
+}
+#acnchor1{
+    color: white;
+}
+#acnchor2{
+    color: #d681f6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#servicecard{
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 5px;
+    border-radius: 28px;
+    box-shadow:  9px 9px 18px #b3b3b3, 
+             -9px -9px 18px #ffffff;
+    margin-top: 5%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#cardscontainer{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
 }
-
-.App-link {
-  color: #61dafb;
+#servicesheading{
+    width: 40%;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 800;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#services{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+#servicesparagraph{
+    width: 42%;
+    text-align: center;
+}
+#aboutimage{
+    width: 400px;
+    height: 400px;
+    margin-right: 8vw;
+    filter: brightness(0.7);
+}
+#aboutsection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#abouttext{
+    width: 40%;
+}
+#learnmoreanchor{
+    text-decoration: none;
+    color: white;
+}
+#contacts{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+#contactsform{
+    width: 50%;
+}
+#contactsinputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+#contactsinputs>input{
+    margin-bottom: 4vh;
+}
+#contactscheck{
+    display: flex;
+    justify-content: center;
+}
+#contactscheck>input{
+    align-self: center;
+}
+#cardbg{
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    z-index: -1;
+}
+#cardimg{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    margin-bottom: 10%;
+}
+#cardtitle{
+    text-align: center;
+}
+#carddescription{
+    text-align: center;
+}
+#abouthead{
+    width: 32%;
+    border-bottom: 2px solid  #d681f6;
+}
+#aboutpar1{
+    color: #565759;
+}
+#aboutpar2{
+    color: #565759;
+    width: 80%;
+}
+#aboutbtn{
+    color: white;
+    border: none;
+    background-color: #d681f6;
+    width: 25%;
+    height: 6vh;
+    font-size: 16px;
+    font-weight: 800;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+#aboutbtn:hover{
+    cursor: pointer;
+}
+#contactsbuttoncontainer{
+    display: flex;
+    justify-content: center;
+}
+#contactsbutton{
+    color: white;
+    border: none;
+    background-color: #d681f6;
+    width: 25%;
+    height: 6vh;
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 8%;
+}
+#contactsbutton:hover{
+    cursor: pointer;
+}
+#contactshead{
+    width: 60%;
+    text-align: center;
+}
+input{
+    border: none;
+    border-bottom: 1px solid gray;
+}
+input:focus{
+    outline: none;
+}
+#prices{
+    display: flex;
+    flex-direction: column;
+}
+#pricestoptext{
+    width: 60%;
+    margin-left: 10%;
+    
+}
+#pricestitle{
+    border-bottom: 2px solid #d681f6;
+    width: 26%;
+    padding: 10px;
+}
+#pricescalc{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    box-shadow:  9px 9px 18px #b3b3b3, 
+             -9px -9px 18px #ffffff;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+#pricesbigdiv{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-self: center;
+}
+#pricestextdiv{
+    width: 50vw;
+}
+#calctext{
+    margin-top: 10%;
+}
+.calcinput{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.lable{
+    width: 40%;
+}
+.selection{
+    width: 50%;
+}
+#output{
+    text-align: end;
+    margin-right: 20px;
+    
+}
+#outputdiv{
+    display: flex;
+    justify-content: flex-end;
+}
+#currency{
+    height: 35%;
+    align-self: center;
+    margin-right: 10px;
+}
+#gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+#gallerycategories{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+#galleryimages{
+    width: 70vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallerynav:hover{
+    cursor: pointer;
+}
+.galleryarrow:hover{
+    cursor: pointer;
+}
+#galleryimagesdiv{
+    width: 90%;
+    overflow: auto;
+}
+#galleryheading{
+    border-bottom: 3px solid #d681f6;
+    padding: 5px;
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    background-color: #302f31;
+    color: white;
+}
+#footerdivs{
+    display: flex;
+    justify-content: center;
+}
+.footercontacts{
+    display: flex;
+    align-items: center;
+}
+.footerimg{
+    width: 50px;
+    height: 50px;
+    margin-top: 3%;
+}
+#footerimgaescontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+#instagramfollow{
+   margin-left: 12%;
+}
+#footeruseful{
+    margin-left: 12%;
+}
+.footersection{
+    width: 20%;
+}
+.footerlinks{
+    text-decoration: none;
+    color: white;
+}
+.footerlinks:visited{
+    color: white;
+}
+.footerlinks:hover{
+    color: white;
+}
+.footerlinks:link{
+    color: white;
+}
+.tall{
+    height: 200px;
+    width: 100px;
+    grid-row: span 2;
+    grid-column: span 1;
+    object-fit: cover;
+}
+.square{
+    height: 100px;
+    width: 100px;
+    grid-row: span 1;
+    grid-column: span 1;
+    object-fit: cover;
+}
+.wide{
+    height: 100px;
+    width: 200px;
+    grid-row: span 1;
+    grid-column: span 2;
+    object-fit: cover;
+}
+#galleryimagesdiv{
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-auto-flow: column;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+#rights{
+    margin-left: 10%
+}
+#imgbig{
+    width: 100vw;
+    height: 300vh;
+    background-color: darkgray;
+    position: absolute;
+    filter: opacity(0.7);
+    top: 2100px;
+    display: none;
+}
+#bigimagcontainer{
+    width: 60%;
+    height: 80%;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    margin-top: 10%;
+    filter: opacity(1);
+    z-index: 2;
+    display: none;
+    transform: translate(-50%, -50%);
+}
+#bigimage{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.footerimg:hover{
+    cursor: pointer;
+}
+#instagramfollow:hover{
+    cursor: pointer;
+}
+.footericons{
+    margin-right: 5px;
 }
