@@ -24,12 +24,12 @@ function Footer(){
             <div className='footersection'>
                 <h3 id='footeruseful'>Useful links</h3>
                 <ul>
-                    <li><a class='footerlinks' href='#home'>Home</a></li>
-                    <li><a class='footerlinks' href='#aboutsection'>About</a></li>
-                    <li><a class='footerlinks' href='#services'>Services</a></li>
-                    <li><a class='footerlinks' href='#prices'>Pricing</a></li>
-                    <li><a class='footerlinks' href='#gallery'>Gallery</a></li>
-                    <li><a class='footerlinks' href='#contacts'>Contacts</a></li>
+                    <li><a className='footerlinks' href='#home'>Home</a></li>
+                    <li><a className='footerlinks' href='#aboutsection'>About</a></li>
+                    <li><a className='footerlinks' href='#services'>Services</a></li>
+                    <li><a className='footerlinks' href='#prices'>Pricing</a></li>
+                    <li><a className='footerlinks' href='#gallery'>Gallery</a></li>
+                    <li><a className='footerlinks' href='#contacts'>Contacts</a></li>
                 </ul>
             </div>
             <div className='footersection'>
@@ -44,13 +44,13 @@ function Footer(){
                 </div>
             </div>
             <div className='footersection'>
-                <h3>Contact Us</h3>
+                <h3 id='footercontactus'>Contact Us</h3>
                 <IconContext.Provider value={{ color: "white", className: "footericons", size: '1em' }}>
                 <div className='footercontacts'>
-                <RiMailLine/><p> info.garden@spancer.com</p>
+                <RiMailLine/><p className='footercontactaddress'> info.garden@spancer.com</p>
                 </div>
                 <div className='footercontacts'>
-                <RiPhoneLine/><p>+447 800 767 690</p>
+                <RiPhoneLine/><p className='footercontactaddress'>+447 800 767 690</p>
                 </div>
                 </IconContext.Provider>
             </div>

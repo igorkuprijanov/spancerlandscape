@@ -464,3 +464,163 @@ input:focus{
 .footericons{
     margin-right: 5px;
 }
+@media only screen and (max-width: 768px){
+    .navitem{
+        font-size: 14px;
+        margin-left: 14px;
+    }
+    #homebackground{
+        object-fit: cover;
+    }
+    #homebuttonstart{
+        width: 8em;
+    }
+    #homebuttonprojects{
+        width: 8em;
+    }
+    #servicecard{
+        width: 250px;
+    }
+    #cardscontainer{
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    #aboutpar1{
+        width: 80%;
+    }
+    #aboutbtn{
+        width: 9em;
+    }
+    .lable{
+        margin-right: 28px;
+    }
+    #contactsbutton{
+        width: 9em;
+    }
+    #inputcheck{
+        margin-right: 20px;
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 426px){
+    .navitem{
+        font-size: 6px;
+        margin-left: 5px;
+    }
+    #logo{
+        transform: scale(0.6);
+        margin-left: -20px;
+    }
+    #homeheading{
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    #homeparagraph{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    #homebuttonstart{
+        width: 6em;
+        height: 3em;
+        font-size: 12px;
+    }
+    #homebuttonprojects{
+        width: 6em;
+        height: 3em;
+        font-size: 12px;
+    }
+    #servicesheading{
+        font-size: 18px;
+        width: 80%;
+    }
+    #servicesparagraph{
+        font-size: 12px;
+        width: 70%;
+    }
+    #cardtitle{
+        font-size: 18px;
+    }
+    #carddescription{
+        font-size: 12px;
+    }
+    #servicecard{
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    #aboutimage{
+        display: none;
+    }
+    #abouttext{
+        width: 80%;
+    }
+    #abouthead{
+        width: 40%;
+        font-size: 22px;
+    }
+    #aboutpar1{
+        font-size: 12px;
+    }
+    #aboutpar2{
+        font-size: 12px;
+    }
+    #pricestitle{
+        font-size: 24px;
+        width: 80%;
+    }
+    .pricestextsmall{
+        font-size: 12px;
+        width: 250px;
+    }
+    #pricesbigdiv{
+        display: block;
+    }
+    #pricescalc{
+        width: 240px;
+        margin-top: 50px;
+    }
+    #galleryheading{
+        font-size: 24px;
+        margin-top: 70px;
+    }
+    #galleryheadtext{
+        width: 80%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .gallerynav{
+        font-size: 12px;
+        margin-bottom: 80px;
+        margin-right: 5px;
+    }
+    #galleryimages{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #contactshead{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    #checkboxlabel{
+        font-size: 10px;
+    }
+    .footersection{
+        font-size: 12px;
+        width: 75px;
+    }
+    #footeruseful{
+        font-size: 12px;
+    }
+    #instagramfollow{
+        font-size: 12px;
+    }
+    #footercontactus{
+        font-size: 12px;
+    }
+    .footersection>ul{
+        padding-left: 20px;
+    }
+    .footercontactaddress{
+        width: 70px;
+        word-wrap: break-word;
+    }
+}

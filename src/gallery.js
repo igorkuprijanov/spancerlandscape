@@ -105,7 +105,7 @@ class Gallery extends React.Component{
         console.log(e.target.id)
         let currentImage
         for(let i = 0; i<galleryData.length; i++){
-            if(i == e.target.id){
+            if(i === e.target.id){
                 currentImage = galleryData[i].source
             }
         }
@@ -132,7 +132,7 @@ class Gallery extends React.Component{
              <img alt='' id='bigimage' src={this.state.bigimage}/>
          </div> 
        <h1 id='galleryheading'>Our Gallery</h1>
-       <p>We have created and implemented more than 100 projects over the course of our work.</p>
+       <p id='galleryheadtext'>We have created and implemented more than 100 projects over the course of our work.</p>
        <div id='gallerycategories'>
            <h4 className='gallerynav' onClick={this.filterImages}>All</h4>
            <h4 className='gallerynav' onClick={this.filterImages}>Planning</h4>

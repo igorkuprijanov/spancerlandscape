@@ -18,7 +18,7 @@ function Contacts(){
            <input placeholder='Address'/>
            </div>
            <div id='contactscheck'>
-           <input id='inputcheck' type='checkbox'/><label>I agree to the processing of personal data</label>
+           <input id='inputcheck' type='checkbox'/><label id='checkboxlabel'>I agree to the processing of personal data</label>
            </div>
            <div id='contactsbuttoncontainer'>
                <button id='contactsbutton' onClick={contactsSend}>Send</button>

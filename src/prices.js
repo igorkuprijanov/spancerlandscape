@@ -114,26 +114,26 @@ class Prices extends React.Component{
      <div id='pricestoptext'>
       <div>
        <h1 id='pricestitle'>The Pricing</h1>
-       <p>Pricing is calculated by using the area of the greening area, amount of decorations and greenery and environmental variables.</p>
+       <p className='pricestextsmall'>Pricing is calculated by using the area of the greening area, amount of decorations and greenery and environmental variables.</p>
        </div>
        <div>
        <h3>Area</h3>
-       <p>Fairly simple variable, the larger area is, the more materials work and time is needed to complete the work.</p>
+       <p className='pricestextsmall'>Fairly simple variable, the larger area is, the more materials work and time is needed to complete the work.</p>
        </div>
        </div>
        <div id='pricesbigdiv'>
        <div id='pricestextdiv'>
        <div>
        <h3>Decorations</h3>
-       <p>Some people like more simple and plain environments, some on the other hand like voluptuous gardens in the style of Luis XVI. Decorations can be done in many different ways, that can affect price in many ways.</p>
+       <p className='pricestextsmall'>Some people like more simple and plain environments, some on the other hand like voluptuous gardens in the style of Luis XVI. Decorations can be done in many different ways, that can affect price in many ways.</p>
        </div>
        <div>
        <h3>Greenery</h3>
-       <p>The total amount of new plants, grass and natural objects. Our plants and greenery are taken from commertial nature preserves that enables us to get plants of all sizes and ages.</p>
+       <p className='pricestextsmall'>The total amount of new plants, grass and natural objects. Our plants and greenery are taken from commertial nature preserves that enables us to get plants of all sizes and ages.</p>
        </div>
        <div>
        <h3>Environmental variables</h3>
-       <p>Environment defines our work. We can create almost anything: create or remove hills, drain or create water bodies, fill and dig holes. Yet it is the most extencive and time-consuming work.</p>
+       <p className='pricestextsmall'>Environment defines our work. We can create almost anything: create or remove hills, drain or create water bodies, fill and dig holes. Yet it is the most extencive and time-consuming work.</p>
        </div>
        </div>
        <div id='pricescalc'>
